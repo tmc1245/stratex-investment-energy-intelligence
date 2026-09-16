@@ -1,0 +1,33 @@
+# Security Policy
+
+## Public repository warning
+
+This GitHub Pages repository is intended to be publicly accessible.
+
+Do not commit:
+
+- API keys
+- access tokens
+- passwords
+- `.env` files
+- private certificates or keys
+- customer or transaction data
+- PII or PHI
+- employer-confidential information
+- internal URLs or tenant identifiers
+- proprietary models, thresholds, or control logic
+- nonpublic regulatory or examination material
+
+## Data feeds
+
+For any future live-data integration:
+
+- Prefer public, read-only APIs.
+- Never embed secrets in client-side JavaScript.
+- Use a server-side proxy or gateway for authenticated APIs.
+- Apply rate limiting and origin restrictions where appropriate.
+- Treat browser-delivered code as public.
+
+## Reporting
+
+If a secret is accidentally committed, rotate or revoke it immediately and remove it from repository history.
